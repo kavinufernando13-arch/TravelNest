@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest - Trip Generator</title>
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+
+    <section class="page-hero">
+        <h1>AI Trip Generator</h1>
+        <p>Generate your perfect travel destination instantly</p>
+    </section>
+
+    <section class="form-wrap">
+        <form class="form-card" id="tripForm">
+            <h2>Find Your Dream Destination</h2>
+            <select id="tripType" required>
+                <option value="">Select Trip Type</option>
+                <option value="beach">Beach Vacation</option>
+                <option value="adventure">Adventure Trip</option>
+                <option value="city">City Escape</option>
+                <option value="nature">Nature Retreat</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Generate Trip</button>
+            <div class="result-box">
+                <h3 id="tripName">Your destination will appear here</h3>
+                <p id="tripText"></p>
+                <img id="tripImage" src="" alt="Trip destination">
+                <div id="actionButtons" class="action-buttons">
+                    <button type="button" class="btn btn-outline" id="surpriseBtn">Surprise Me Again</button>
+                    <button type="button" class="btn" id="wishlistBtn">Save to Wishlist</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+    <div id="footer-placeholder"></div>
+    <script src="js/global.js"></script>
+    <script src="js/TripGen.js"></script>
+</body>
+</html>

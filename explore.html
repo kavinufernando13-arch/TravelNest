@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest - Explorer</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/explore.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+
+    <section class="page-hero">
+        <h1>Destination Explorer</h1>
+        <p>Search and discover amazing places around the world</p>
+    </section>
+
+
+
+    
+
+    <section class="controls">
+        <input type="text" id="searchInput" placeholder="Search destination...">
+        <select id="regionFilter">
+            <option value="all">All Regions</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="america">America</option>
+            <option value="oceania">Oceania</option>
+        </select>
+    </section>
+
+    <section class="grid" id="destinationGrid"></section>
+
+    <div id="destinationModal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button type="button" class="modal-close" aria-label="Close details">×</button>
+            <div class="modal-body">
+                <h2 id="modalName"></h2>
+                <p id="modalRegion"></p>
+                <p id="modalDescription" class="modal-desc"></p>
+                <div class="modal-details">
+                    <div class="detail-card">
+                        <p class="detail-label">Top attractions</p>
+                        <ul id="modalAttractions" class="modal-list"></ul>
+                    </div>
+                    <div class="detail-card">
+                        <p class="detail-label">Typical costs</p>
+                        <table id="modalCosts" class="modal-cost-table"></table>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <a href="./Budget.html" class="modal-button">Plan Budget</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+    <script src="js/global.js"></script>
+    <script src="js/explore.js"></script>
+</body>
+</html>

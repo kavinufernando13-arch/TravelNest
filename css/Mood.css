@@ -1,0 +1,332 @@
+﻿.mood-sounds {
+    max-width: 820px;
+    margin: 20px auto 0;
+    padding: 20px 20px;
+    background: var(--surface);
+    border: 1px solid rgba(0, 240, 255, 0.08);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+}
+
+.mood-sounds h2 {
+    margin-bottom: 14px;
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.mood-sounds .hint-text {
+    margin-bottom: 24px;
+    color: var(--text-muted);
+}
+
+.ambient-audio {
+    display: none;
+}
+
+.sound-controls {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.btn-sound {
+    width: auto;
+    min-width: 130px;
+    padding: 14px 22px;
+    background: var(--surface);
+    color: var(--primary);
+    border: 2px solid rgba(6, 182, 212, 0.35);
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(11, 17, 33, 0.06);
+}
+
+.btn-sound:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    box-shadow: 0 16px 35px rgba(0, 240, 255, 0.12);
+}
+
+.btn-sound.active {
+    background: var(--accent);
+    color: var(--primary);
+    border-color: var(--accent);
+}
+
+/* Dashboard Layout - Two Column */
+.dashboard-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    align-items: start;
+}
+
+/* Form Wrap Styling */
+.form-wrap {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+}
+
+.form-card {
+    width: 100%;
+    padding: 42px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.95));
+    border-radius: var(--radius-lg);
+    box-shadow: 0 10px 40px rgba(11, 17, 33, 0.08);
+    border: 1px solid rgba(0, 240, 255, 0.08);
+    animation: slideInUp 0.6s ease-out;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mood-form {
+    max-width: none;
+}
+
+.mood-form select {
+    margin-bottom: 16px;
+}
+
+/* My Trips Section */
+.my-trips {
+    padding: 42px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.95));
+    border-radius: var(--radius-lg);
+    box-shadow: 0 10px 40px rgba(11, 17, 33, 0.08);
+    border: 1px solid rgba(0, 240, 255, 0.08);
+    animation: slideInUp 0.6s ease-out;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-trips h2 {
+    margin-bottom: 12px;
+    color: var(--primary);
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.my-trips .hint-text {
+    text-align: center;
+    margin-bottom: 28px;
+    color: var(--text-muted);
+}
+
+.tracked-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    text-align: center;
+    margin-top: 0;
+    flex: 1;
+}
+
+.tracked-grid h3 {
+    color: var(--primary);
+    margin-bottom: 14px;
+}
+
+.result-box img {
+    max-height: 250px !important;
+}
+
+.tracked-list {
+    list-style: none;
+    background: rgba(248, 250, 252, 0.94);
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    min-height: 80px;
+}
+
+.tracked-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.tracked-list li:last-child {
+    border-bottom: none;
+}
+
+.tracked-empty {
+    color: var(--text-muted);
+}
+
+.tracked-remove {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: rgba(15, 23, 42, 0.08);
+    cursor: pointer;
+}
+
+.tracked-remove:hover {
+    background: rgba(239, 68, 68, 0.15);
+    color: #b91c1c;
+}
+
+.action-buttons .btn.is-active {
+    box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.35);
+}
+
+/* Surprise Me Button */
+.btn-surprise {
+    display: none;
+    margin-top: 16px;
+    background: linear-gradient(135deg, rgba(0, 240, 255, 0.2), rgba(255, 42, 109, 0.2));
+    color: var(--primary);
+    border: 2px solid var(--accent);
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.btn-surprise.is-visible {
+    display: block;
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.btn-surprise:hover {
+    background: linear-gradient(135deg, rgba(0, 240, 255, 0.3), rgba(255, 42, 109, 0.3));
+    border-color: var(--accent-hover);
+    color: var(--accent);
+    box-shadow: 0 8px 24px rgba(0, 240, 255, 0.3), inset 0 0 0 2px var(--accent-hover);
+    transform: translateY(-4px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .dashboard-wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        padding: 0 16px;
+    }
+
+    .form-card {
+        min-height: 450px;
+        padding: 36px 28px;
+    }
+
+    .my-trips {
+        min-height: 450px;
+        padding: 36px 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-wrapper {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        max-width: 100%;
+        padding: 0 16px;
+        margin: 32px auto;
+    }
+
+    .form-card {
+        min-height: auto;
+        padding: 32px 24px;
+    }
+
+    .mood-form {
+        max-width: none;
+    }
+
+    .my-trips {
+        min-height: auto;
+        padding: 32px 24px;
+        order: 2;
+    }
+
+    .form-wrap {
+        order: 1;
+    }
+
+    .my-trips h2 {
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+    }
+
+    .tracked-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .form-card h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    .result-box {
+        margin-top: 24px;
+        padding-top: 20px;
+    }
+
+    .result-box h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-wrapper {
+        gap: 20px;
+        padding: 0 12px;
+        margin: 24px auto;
+    }
+
+    .form-card {
+        padding: 24px 16px;
+    }
+
+    .my-trips {
+        padding: 24px 16px;
+    }
+
+    .form-card h2,
+    .my-trips h2 {
+        font-size: 1.4rem;
+        margin-bottom: 16px;
+    }
+
+    .my-trips .hint-text,
+    .form-card .hint-text {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+
+    .tracked-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .tracked-grid > div {
+        width: 100%;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .action-buttons .btn {
+        width: 100%;
+    }
+}

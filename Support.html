@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest - Feedback</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/Support.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+
+    <section class="page-hero">
+        <h1>We Value Your Feedback</h1>
+        <p>Help us improve your TravelNest experience</p>
+    </section>
+
+    <section class="form-wrap">
+        <form class="form-card" id="feedbackForm">
+            <h2>Send Feedback</h2>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <select id="rating" required>
+                <option value="">Rate Your Experience</option>
+                <option value="5">Excellent</option>
+                <option value="4">Very Good</option>
+                <option value="3">Good</option>
+                <option value="2">Fair</option>
+                <option value="1">Poor</option>
+            </select>
+            <textarea id="message" placeholder="Write your feedback here..." rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary">Submit Feedback</button>
+            <p id="successMessage" class="success-message" style="display:none;">Feedback submitted successfully!</p>
+        </form>
+    </section>
+
+    <section class="page-panel">
+        <p class="section-sub">Reviews</p>
+        <h2>What Travelers Say</h2>
+        <div class="info-grid">
+            <article class="info-card testimonial-card">
+                <div class="testimonial-meta">
+                    <div class="avatar">E</div>
+                    <div>
+                        <h3>Emily</h3>
+                        <div class="star-rating">★★★★★</div>
+                    </div>
+                </div>
+                <p class="testimonial-text">TravelNest made planning my vacation so easy! The intuitive tools helped me budget and discover hidden gems.</p>
+            </article>
+            <article class="info-card testimonial-card">
+                <div class="testimonial-meta">
+                    <div class="avatar">D</div>
+                    <div>
+                        <h3>David</h3>
+                        <div class="star-rating">★★★★★</div>
+                    </div>
+                </div>
+                <p class="testimonial-text">Amazing destination recommendations and budget tools. I saved time and money planning my last trip.</p>
+            </article>
+            <article class="info-card testimonial-card">
+                <div class="testimonial-meta">
+                    <div class="avatar">S</div>
+                    <div>
+                        <h3>Sophia</h3>
+                        <div class="star-rating">★★★★★</div>
+                    </div>
+                </div>
+                <p class="testimonial-text">The trip generator gave me awesome ideas! I found places I never knew existed.</p>
+            </article>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+    <script src="js/global.js"></script>
+    <script src="js/Support.js"></script>
+</body>
+</html>
