@@ -156,6 +156,16 @@ nav a:hover::after {
     width: 100%;
 }
 
+nav a.active {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+nav a.active::after {
+    width: 100%;
+    background: var(--accent);
+}
+
 /* BUTTONS */
 button, .btn {
     padding: 14px 28px;
