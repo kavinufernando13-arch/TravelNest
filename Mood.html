@@ -19,16 +19,16 @@
         <h2>Ambient Travel Sounds</h2><br>
         <p class="hint-text">Tap a sound to play. Tap again to stop.</p>
         <div class="sound-controls">
-            <button type="button" class="btn btn-sound" id="btn-beach" data-sound="beach" aria-pressed="false">Beach</button>
+            <button type="button" class="btn btn-sound" id="btn-rain" data-sound="rain" aria-pressed="false">Rain</button>
             <button type="button" class="btn btn-sound" id="btn-forest" data-sound="forest" aria-pressed="false">Forest</button>
             <button type="button" class="btn btn-sound" id="btn-city" data-sound="city" aria-pressed="false">City</button>
         </div>
-        <audio id="audio-beach" class="ambient-audio" loop playsinline preload="auto"
-            src="https://actions.google.com/sounds/v1/water/waves_crashing_on_rock_beach.ogg"></audio>
-        <audio id="audio-forest" class="ambient-audio" loop playsinline preload="auto"
-            src="https://actions.google.com/sounds/v1/ambiences/summer_forest.ogg"></audio>
-        <audio id="audio-city" class="ambient-audio" loop playsinline preload="auto"
-            src="https://actions.google.com/sounds/v1/ambiences/subway_station_nyc.ogg"></audio>
+        <audio id="audio-rain" class="ambient-audio" loop preload="auto"
+            src="audio/rain.mp3"></audio>
+        <audio id="audio-forest" class="ambient-audio" loop preload="auto"
+            src="audio/forest.mp3"></audio>
+        <audio id="audio-city" class="ambient-audio" loop preload="auto"
+            src="audio/city.mp3"></audio>
     </section>
 
     <div class="dashboard-wrapper">
@@ -46,7 +46,7 @@
                 <div class="result-box">
                     <h3 id="moodDestination">Your destination will appear here</h3>
                     <p id="moodText"></p>
-                    <img id="moodImage" src="" alt="Mood destination">
+                    <img id="moodImage" src="images/mood.jpg" alt="Mood destination">
                     <p id="destinationStatus" class="status-msg"></p>
                     <div id="actionButtons" class="action-buttons">
                         <button type="button" class="btn" id="markVisitedBtn">Visited</button>
@@ -58,7 +58,7 @@
         </section>
 
         <section class="page-panel my-trips">
-            <h2>Your Destinations</h2>
+            <h2>Your Destinations</h2><br>
             <p class="hint-text">Visited and planned places are saved in this browser.</p>
             <div class="tracked-grid">
                 <div>
