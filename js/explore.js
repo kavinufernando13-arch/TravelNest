@@ -72,7 +72,9 @@ grid.addEventListener("keydown", (e) => {
   if (dest) openModal(dest);
 });
 
-document.querySelector(".modal-close")?.addEventListener("click", closeModal);
+document.querySelector(".modal-close")?.addEventListener("click", () => {
+  closeModal();
+});
 modal.addEventListener("click", (e) => {
   if (e.target === modal) closeModal();
 });

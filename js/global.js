@@ -7,9 +7,19 @@ const NAV_LINKS = [
   { href: "./Support.html", label: "Feedback" }
 ];
 
-const navList = NAV_LINKS.map((link) => `<li><a href="${link.href}">${link.label}</a></li>`).join("");
+function getCurrentPage() {
+  const currentPage = window.location.pathname.split("/").pop().toLowerCase();
+  return currentPage || "index.html";
+}
 
 function renderNav() {
+  const currentPage = getCurrentPage();
+  const navList = NAV_LINKS.map((link) => {
+    const linkPage = link.href.split("/").pop().toLowerCase();
+    const activeClass = linkPage === currentPage ? "active" : "";
+    return `<li><a href="${link.href}" class="${activeClass}">${link.label}</a></li>`;
+  }).join("");
+
   return `
   <nav>
     <h2>TravelNest</h2>

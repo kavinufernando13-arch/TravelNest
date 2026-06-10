@@ -25,6 +25,8 @@ function pickTrip() {
   });
 
   $("actionButtons").classList.add("is-visible");
+  const resultBox = document.querySelector(".result-box");
+  if (resultBox) resultBox.classList.add("active");
 }
 
 function saveToWishlist() {

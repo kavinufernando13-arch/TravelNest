@@ -1,5 +1,5 @@
 const TRACKED_KEY = "trackedDestinations";
-const SOUNDS = ["beach", "forest", "city"];
+const SOUNDS = ["rain", "forest", "city"];
 
 let currentDestination = null;
 let currentSound = null;
